@@ -105,8 +105,15 @@ vec3 render_Black_Hole(vec3 ro,vec3 rd) {
             float angle = atan(p.x, p.z);
             float radius = length(p.xz);
 
+            // --- DILATAZIONE TEMPORALE (Time Dilation) ---
+            // Formula di Schwarzschild: t' = t * sqrt(1 - rs/r)
+            // rs (raggio Schwarzschild) nel nostro caso è 1.0
+            // Più siamo vicini a 1.0, più il fattore tende a 0 (tempo fermo)
+            float dilation = sqrt(clamp(1.0 - 1.0 / radius, 0.0, 1.0));
+            float localTime = u_time * dilation;
+
             // Velocità differenziale: il centro gira più veloce dell'esterno (Legge di Keplero)
-            float speed = 2.0 / (radius * radius);
+            float speed = 2.0 / (radius * radius) * dilation;
 
             float temperatura = 0.6 / (d - 2.5);
             vec3 diskColor = blackbody_color(temperatura);
@@ -119,7 +126,7 @@ vec3 render_Black_Hole(vec3 ro,vec3 rd) {
 
             // Creiamo la coordinata 2D animata per il noise
             // Usiamo 'angle' per la X (rotazione) e 'radius' per la Y (distanza)
-            vec2 polarUV = vec2(angle * 3.0 - u_time * speed, radius - u_time * 0.5);
+            vec2 polarUV = vec2(angle * 3.0 - localTime * speed, radius - u_time * 0.5);
 
             // --- B. Turbolenza Frattale (fBM) ---
             float turbolenza = 0.0;
@@ -151,9 +158,10 @@ vec3 render_Black_Hole(vec3 ro,vec3 rd) {
 
             // Doppler (Luce relativistica)
             float doppler = 1.0 + dot(rd, vec3(1.0, 0.0, 0.0)) * 0.8;
+            float innerEdge = smoothstep(2.6, 2.8, d);
 
             // Somma finale: Colore * Forma(Alpha) * Gas(Turbolenza) * Fisica(Doppler) + Glow
-            return diskColor * alpha * turbolenza * doppler + glow;
+            return diskColor * alpha * turbolenza * doppler + glow * innerEdge;
         }
     }
     return col + glow;
