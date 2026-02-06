@@ -40,10 +40,11 @@ float create_noise(vec2 p) {
     return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
 }
 
+// COLORE DARK (La tua funzione personalizzata)
 vec3 blackbody_color(float temp) {
-    vec3 col = vec3(255.0, 240.0, 220.0) / 255.0; // Base bianca
-    col *= exp(vec3(1.0, 0.9, 0.8) * temp);       // Tinta basata sul calore
-    return col;
+    vec3 baseColor = vec3(1.5, 0.3, 0.05);
+    vec3 color_weights = vec3(0.1, 0.8, 1.2);
+    return baseColor * exp(-color_weights / temp);
 }
 
 //rd direzione in cui si sta muovemno la luce
