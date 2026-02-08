@@ -1,7 +1,12 @@
 # ninja log v6
-1	37	1770420602669513119	build.ninja	efdbff184b3202a2
-402	609	1770159209763906492	Black_Hole_Simulation	f8d9bcbd12d1fb8f
-2	36	1770159889537927553	CMakeFiles/BlackHoleSimulation.dir/glad.c.o	7c7d7b4bab89921b
-4	340	1770165103865787838	CMakeFiles/BlackHoleSimulation.dir/main.cpp.o	83cc0857e6e54602
 340	423	1770165104202151743	BlackHoleSimulation	47e3d3488ea77c41
-0	36	1770420602669513119	build.ninja	efdbff184b3202a2
+4	340	1770165103865787838	CMakeFiles/BlackHoleSimulation.dir/main.cpp.o	83cc0857e6e54602
+2	36	1770159889537927553	CMakeFiles/BlackHoleSimulation.dir/glad.c.o	7c7d7b4bab89921b
+402	609	1770159209763906492	Black_Hole_Simulation	f8d9bcbd12d1fb8f
+3	45	1770468271028239754	build.ninja	efdbff184b3202a2
+3	340	1770555282904097982	CMakeFiles/BlackHoleSimulation.dir/main.cpp.o	83cc0857e6e54602
+340	542	1770555283241016754	BlackHoleSimulation	47e3d3488ea77c41
+4	487	1770555367088470573	CMakeFiles/BlackHoleSimulation.dir/main.cpp.o	83cc0857e6e54602
+487	566	1770555367572055947	BlackHoleSimulation	47e3d3488ea77c41
+4	472	1770565589004222570	CMakeFiles/BlackHoleSimulation.dir/main.cpp.o	83cc0857e6e54602
+472	623	1770565589471998382	BlackHoleSimulation	47e3d3488ea77c41
