@@ -10,7 +10,7 @@ A real-time rendering of a Schwarzschild Black Hole, built using **Ray Marching*
 > ⚠️ **Disclaimer:** The code is currently **Work in Progress (WIP)** and subject to changes.
 
 ## 🔭 Overview
-The goal of this shader is to visually simulate relativistic physics to achieve a cinematic and physically plausible look within a fragment shader.
+The goal of this shader is to visually simulate relativistic physics to achieve a cinematic and physically plausible look within a fragment shader. 
 
 ## 🛠️ Tech Stack
 * OpenGL / GLSL fragments
