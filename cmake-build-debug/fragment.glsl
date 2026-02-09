@@ -43,17 +43,14 @@ float create_noise(vec2 p) {
 // COLORE DARK (La tua funzione personalizzata)
 // COLORE "INTERSTELLAR" (Bronzo, Rosso Scuro e Oro)
 // COLORE "INTERSTELLAR" SCURO (Bronzo profondo)
-// COLORE "MAGMA" (Oro vivo al centro, Rosso fuoco ai bordi)
-// COLORE "CLASSIC GOLD" (Il look delle tue immagini preferite)
 vec3 blackbody_color(float temp) {
-    // 1. BASE COLOR:
-    // Rosso alto (3.5) + Verde medio (1.1).
-    // Questo mix (Rosso + Verde) crea il GIALLO/ORO intenso che ti piaceva.
-    vec3 baseColor = vec3(3.5, 1.1, 0.2);
+    // MODIFICA QUI:
+    // Prima era: vec3(3.5, 1.5, 0.2);
+    // Adesso: Abbassiamo tutto per un tono più scuro e ricco.
+    vec3 baseColor = vec3(2.8, 1.1, 0.15);
 
-    // 2. PESI (Soglie):
-    // Il blu (4.0) è alto per mantenere il cuore caldo e non bianco ghiaccio.
-    vec3 color_weights = vec3(0.1, 1.0, 4.0);
+    // Le soglie rimangono uguali per mantenere lo stesso equilibrio di colori
+    vec3 color_weights = vec3(0.1, 1.2, 5.0);
 
     return baseColor * exp(-color_weights / max(0.001, temp));
 }
@@ -104,7 +101,7 @@ vec3 render_Black_Hole(vec3 ro,vec3 rd) {
         // 2. NUOVO: Calcolo del Glow Volumetrico
         // Più siamo vicini al disco (p.y vicino a 0) e al centro, più c'è "nebbia" luminosa
         float distToDisk = length(vec2(d - 3.5, p.y * 5.0)); // Distanza approssimata dalla ciambella
-        glow += vec3(1.4* 0.4, 0.4*0.4, 0.1*0.4) * 0.09 / (0.1 + distToDisk * distToDisk);
+        glow += vec3(1, 0.3, 0.1) * 0.09 / (0.1 + distToDisk * distToDisk);
 
         // 1. ORIZZONTE DEGLI EVENTI, definisco in questo modo la grandezza del buco nero
         if(d < 1.0) {
@@ -198,7 +195,7 @@ vec3 render_Black_Hole(vec3 ro,vec3 rd) {
             vec3 diskColor = blackbody_color(finalTemp);
 
             // Boost luminosità (necessario perché il redshift scurisce molto l'immagine)
-            diskColor *= 0.25;
+            diskColor *= 1;
 
             // 6. BORDI E PULIZIA
             // ISCO: Inner Stable Circular Orbit (taglio netto interno)
@@ -207,7 +204,7 @@ vec3 render_Black_Hole(vec3 ro,vec3 rd) {
             // Somma finale
             // Nota: gasPattern arriva dalla Parte A che hai già scritto sopra
             // Aggiungiamo 'outerEdge' per sfumare dolcemente il bordo esterno a distanza 6.0
-            float outerEdge = smoothstep(6.5, 3.5, d);
+            float outerEdge = smoothstep(5.0, 4.0, d);
             return diskColor * alpha * gasPattern * innerEdge * outerEdge + glow;
         }
 
@@ -223,9 +220,9 @@ void main() {
 
     // --- 2. ANIMAZIONE CAMERA (ORBITALE LENTA) ---
 
-    float dist = 20.0;             // Distanza
+    float dist = 14.0;             // Distanza
     // MODIFICA 1: Velocità ridotta da 0.1 a 0.03 per un movimento lento
-    float speed = 0.06;
+    float speed = 0.01;
     float height = 3.5 * sin(u_time * 0.05); // Oscillazione verticale lenta
 
     // Calcolo posizione Camera (Ray Origin - ro)
