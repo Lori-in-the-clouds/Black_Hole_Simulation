@@ -1,5 +1,5 @@
 # GLSL Black Hole Simulation 🪐🕳
-![Interstellar Black Hole Demo](videos/buco_nero_video.gif)
+![Interstellar Black Hole Demo](output_HD.gif)
 
 A real-time rendering of a Schwarzschild Black Hole (inspired by *Interstellar*), built using **Ray Marching** and **GLSL**.
 
