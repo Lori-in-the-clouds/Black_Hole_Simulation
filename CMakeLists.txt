@@ -8,7 +8,8 @@ link_directories(/opt/homebrew/lib)
 include_directories(/opt/homebrew/include)
 
 # 2. Definiamo l'eseguibile
-add_executable(BlackHoleSimulation main.cpp glad.c)
+add_executable(BlackHoleSimulation main.cpp glad.c video_recorder.cpp)
+
 
 # 3. Specifichiamo i percorsi degli header locali (glad/KHR)
 target_include_directories(BlackHoleSimulation PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})

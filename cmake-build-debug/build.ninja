@@ -63,6 +63,13 @@ build CMakeFiles/BlackHoleSimulation.dir/glad.c.o: C_COMPILER__BlackHoleSimulati
   OBJECT_DIR = CMakeFiles/BlackHoleSimulation.dir
   OBJECT_FILE_DIR = CMakeFiles/BlackHoleSimulation.dir
 
+build CMakeFiles/BlackHoleSimulation.dir/video_recorder.cpp.o: CXX_COMPILER__BlackHoleSimulation_unscanned_Debug /Users/lorenzodimaio/Downloads/Black_Hole_Simulation/video_recorder.cpp || cmake_object_order_depends_target_BlackHoleSimulation
+  DEP_FILE = CMakeFiles/BlackHoleSimulation.dir/video_recorder.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/include -I/Users/lorenzodimaio/Downloads/Black_Hole_Simulation
+  OBJECT_DIR = CMakeFiles/BlackHoleSimulation.dir
+  OBJECT_FILE_DIR = CMakeFiles/BlackHoleSimulation.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target BlackHoleSimulation
@@ -71,7 +78,7 @@ build CMakeFiles/BlackHoleSimulation.dir/glad.c.o: C_COMPILER__BlackHoleSimulati
 #############################################
 # Link the executable BlackHoleSimulation
 
-build BlackHoleSimulation: CXX_EXECUTABLE_LINKER__BlackHoleSimulation_Debug CMakeFiles/BlackHoleSimulation.dir/main.cpp.o CMakeFiles/BlackHoleSimulation.dir/glad.c.o | /opt/homebrew/lib/libglfw.dylib
+build BlackHoleSimulation: CXX_EXECUTABLE_LINKER__BlackHoleSimulation_Debug CMakeFiles/BlackHoleSimulation.dir/main.cpp.o CMakeFiles/BlackHoleSimulation.dir/glad.c.o CMakeFiles/BlackHoleSimulation.dir/video_recorder.cpp.o | /opt/homebrew/lib/libglfw.dylib
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libglfw.dylib  -framework OpenGL  -framework Cocoa  -framework IOKit  -framework CoreVideo
   LINK_PATH = -L/opt/homebrew/lib
