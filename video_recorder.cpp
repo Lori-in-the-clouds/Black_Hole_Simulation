@@ -1,4 +1,4 @@
-#include "utils.h" // IMPORTANTE: Include l'header dove è definita la struct
+#include "utils.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -13,7 +13,6 @@ void VideoRecorder::start(const char* filename, int w, int h, int fps) {
     pixels.resize(width * height * 3);
 
     // Costruiamo il comando per FFmpeg
-    // Nota: Ho aggiunto pixel format yuv420p per massima compatibilità con i player video
     char cmd[512];
     sprintf(cmd,
         "ffmpeg -y -f rawvideo -vcodec rawvideo -s %dx%d -pix_fmt rgb24 -r %d -i - -vf vflip -c:v libx264 -preset ultrafast -qp 0 -pix_fmt yuv420p \"%s\"",
@@ -59,9 +58,6 @@ void VideoRecorder::stop() {
         std::cout << "Video salvato con successo!" << std::endl;
     }
 }
-
-// --- IMPLEMENTAZIONE LETTURA SHADER ---
-// (Anche questa deve stare qui nel cpp)
 
 std::string readShaderFile(const char* filePath) {
     std::ifstream file(filePath);

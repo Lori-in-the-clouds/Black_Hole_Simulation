@@ -6,8 +6,7 @@
 #include "glad/glad.h"
 #include <string>
 #include <vector>
-#include <cstdio>  // Per FILE*
-
+#include <cstdio>
 
 struct VideoRecorder {
     FILE* ffmpegPipe = nullptr;
