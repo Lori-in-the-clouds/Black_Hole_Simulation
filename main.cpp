@@ -183,7 +183,7 @@ int main() {
     recorder.start("buco_nero_interstellar.mp4", bufferWidth, bufferHeight, 60);
 
     int frameCount = 0;
-    int maxFrames = 600;
+    int maxFrames = 1200;
 
     while (!glfwWindowShouldClose(window)) {
         // 1. Pulisci lo schermo
