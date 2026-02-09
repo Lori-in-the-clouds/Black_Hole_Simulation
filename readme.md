@@ -1,7 +1,8 @@
 # GLSL Black Hole Simulation 🪐🕳
-![Black Hole Demo](output.gif)
-
-![Immagine](screenshoot.png)
+<p align="left">
+    <img src="screenshoot.png" width="400">
+    <img src="output.gif" width="400">
+</p>
 
 A real-time rendering of a Schwarzschild Black Hole, built using **Ray Marching** and **GLSL**.
 > 😁 **Just for Fun:** This is a project created purely for experimentation and visual enjoyment. I'm exploring the math behind black holes, but I'm not a physicist—so expect some "artistic liberties" alongside the event horizons!
