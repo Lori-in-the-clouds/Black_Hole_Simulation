@@ -1,0 +1,3 @@
+/Users/lorenzodimaio/Documents/Black_Hole_Simulation/cmake-build-debug/CMakeFiles/BlackHoleSimulation.dir
+/Users/lorenzodimaio/Documents/Black_Hole_Simulation/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lorenzodimaio/Documents/Black_Hole_Simulation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
