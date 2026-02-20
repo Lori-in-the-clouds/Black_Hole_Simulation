@@ -180,7 +180,7 @@ vec3 render_Black_Hole(vec3 ro,vec3 rd) {
 
         // The closer to the disk (p.y -> 0) and the center, the more "luminous fog"
         float distToDisk = length(vec2(d - 3.5, p.y * 5.0));
-        float darkness = 0.65;
+        float darkness = 0.0;
         glow += (vec3(1, 0.3, 0.1) - darkness * vec3(1, 0.3, 0.1)) * 0.075 / (0.5 + distToDisk * distToDisk);
 
         // EVENT HORIZON -> if light enters here, it never escapes
@@ -194,7 +194,7 @@ vec3 render_Black_Hole(vec3 ro,vec3 rd) {
         }
 
         // ACCRETION DISK COLLISION
-        if(abs(p.y) < 0.05 && d > 2.2 && d < 6.0) {
+        if(abs(p.y) < 0.05 && d > 2.2 && d < 8.0) {
             return accretionDisk(p,rd,glow,d);
         }
     }
@@ -292,6 +292,14 @@ void main() {
         set.speed = 0.3;
         set.start_angle = 0.0;
         set.zoom = 1.1;
+    }
+
+    if (u_scenario == 6) {
+        set.dist = 20.0;
+        set.speed = 0.1;
+        set.dynamicHeight = 1;
+        set.start_angle = 0.0;
+        set.zoom = 1;
     }
 
     vec3 ro = get_camera_pos(u_time,set.dist,set.speed,set.dynamicHeight,set.start_angle);
