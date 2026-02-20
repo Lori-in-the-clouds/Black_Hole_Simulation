@@ -1,0 +1,13 @@
+cmake-build-debug/
+cmake-build-release/
+.idea/
+.vscode/
+bin/
+obj/
+
+
+.DS_Store
+Thumbs.db
+
+*.mp4
+*.avi
