@@ -98,32 +98,24 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 5. **Orbit:** a complete 360° hemispherical orbit Passing over the poles.
 ---
 ## 🎥 Qualitative results
-<p>
+The following section presents the qualitative results for Scenarios 1 to 6, demonstrating the diverse camera perspectives and gravitational effects of the simulation:
+<p align="center">
   <img src="readme_video/scenarios_gif/scenario1_low.gif" width="48%" />
   <img src="readme_video/scenarios_gif/scenario2_low.gif" width="48%" />
 </p>
-<p>
-  <em style="display: inline-block; width: 48%;">Scenario 1</em>
-  <em style="display: inline-block; width: 48%;">Scenario 2</em>
-</p>
-
 <p align="center">
   <img src="readme_video/scenarios_gif/scenario3_low.gif" width="48%" />
   <img src="readme_video/scenarios_gif/scenario4_low.gif" width="48%" />
 </p>
 <p align="center">
-  <em style="display: inline-block; width: 48%;">Scenario 3</em>
-  <em style="display: inline-block; width: 48%;">Scenario 4</em>
-</p>
-
-<p align="center">
   <img src="readme_video/scenarios_gif/scenario5_low.gif" width="48%" />
   <img src="readme_video/scenarios_gif/scenario6_low.gif" width="48%" />
 </p>
-<p align="center">
-  <em style="display: inline-block; width: 48%;">Scenario3</em>
-  <em style="display: inline-block; width: 48%;">Scenario 4</em>
-</p>
+The original renders are 5GB each (I know, crazy right?). To save us all some bandwidth, I’m only showing GIFs here. But if you want the 'full' experience without the 5GB headache, you can download a folder with 6 compressed MP4 versions here.
+[Click here to download the 6 compressed scenarios (ZIP)](./readme_video/videos_compressed.zip)
+<a href="https://github.com/Lori-in-the-clouds/Black-Hole-Simulation/raw/new-main/readme_video/videos_compressed.zip" download>
+   <b>Download the 6 compressed scenarios (ZIP) 🚀</b>
+</a>
 
 
 
