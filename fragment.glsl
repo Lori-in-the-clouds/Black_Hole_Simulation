@@ -271,7 +271,7 @@ void main() {
 
     if (u_scenario == 5) {
         float radius = 15.0;            // Distanza costante dal centro del buco nero
-        float videoDuration = 25.0;     // Durata del video in secondi (1500 frame a 60fps = 25s)
+        float videoDuration = 10.0;     // Durata del video in secondi (1500 frame a 60fps = 25s)
 
         // 2. Progresso normalizzato del video (da 0.0 all'inizio a 1.0 alla fine)
         float progress = clamp(u_time / videoDuration, 0.0, 1.0);

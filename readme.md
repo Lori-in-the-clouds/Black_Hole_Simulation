@@ -15,6 +15,17 @@ The simulation visualizes how extreme gravity warps space and time. Rather than 
 
 * **Procedural Accretion Disk:** turbulence and gas patterns are generated using multi-octave Flow Noise and Domain Warping.
 ---
+## ⚡ How it Works: The Logic of Curved Spacetime
+This diagram illustrates the actual physical simulation performed by the shader. Virtual photons are fired from the observer's camera, and their paths are continuously bent by the black hole's extreme gravity.
+
+![Curved Ray-Marching Diagram](./readme_video/schema.jpeg)
+Based on their intricate curved trajectories, the rays meet one of three fates:
+
+* **🔴 Captured Rays:** Their path is bent so violently that they spiral into the Event Horizon ($d < 1.0 \ R_s$), resulting in darkness.
+* **🟡 Disk Rays:** They intersect the thin equatorial plane of the accretion disk ($2.2 < d < 8.0 \ R_s$), accumulating light and turbulent details from the plasma.
+* **🔵 Escaping Rays:** They are deflected by the gravitational lens but manage to escape into deep space ($d > 50.0$), revealing the background starfield.
+---
+
 ## 🔬 Mathematical Implementation
 To achieve real-time performance, the simulation approximates General Relativity equations:
 1. **Gravitational Lensing (Light Bending):** the ray direction ($rd$) is updated at each step based on the distance ($d$) from the center:
@@ -48,6 +59,7 @@ To achieve real-time performance, the simulation approximates General Relativity
     - **$I_{boost}$ (Intensity Multiplier):** the final factor applied to the base color of the gas. It scales the brightness of the disk based on its relative motion.
     - **$rd$ (Ray Direction):** the normalized vector representing the direction of the light ray coming from the camera. 
     - **$v_{gas}$ (Gas Velocity):** the tangential velocity vector of the gas at a specific point in the disk. In the code, this is calculated using the cross product:
+   
         ```c++
         normalize(cross(vec3(0.0, 1.0, 0.0), p))
         ```
@@ -80,10 +92,55 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 
 5. **Orbit:** a complete 360° hemispherical orbit Passing over the poles.
 ---
+## 🎥 Qualitative results
+- **Scenario 1:**
+- **Scenario 2:**
+- **Scenario 3:**
+- **Scenario 4:**
+- **Scenario 5:**
+- **Scenario 6:**
 
+<video src="readme_video/scenarios_gif/scenario1_compresso.mp4" mute autoplay loop style="max-width: 100%;"></video>
 
+---
+## 🚀 Try it Yourself
+Want to navigate the event horizon on your own machine? You can run the simulation and switch between different cinematic scenarios.
+### 1. Prerequisites
+To compile and run the project, ensure you have:
+- A C++ compiler (GCC, Clang, or MSVC).
 
+- GLFW and GLEW/Glad for OpenGL context and window management.
 
+- A GPU that supports OpenGL 3.3 core or higher.
+### 2. Quick Start
+```bash
+# Clone the repository
+git clone https://github.com/tuo-username/tuo-repo.git
 
+# Navigate to the directory
+cd black-hole-simulation
 
+# Compile and Run (example using g++)
+g++ main.cpp -lGL -lGLEW -lglfw -o black_hole
+./black_hole
+```
+### 3. Interactive Scenarios
+The shader includes 6 predefined camera scenarios. You can switch between them by changing the `u_scenario value in the code or via the integrated UI:
+
+| Scenario | Description | Key Feature |
+| :--- | :--- | :--- |
+| **1 & 2** | Standard Orbit | High-quality cinematic view of the disk. |
+| **3** | Top-Down View | Observe the accretion disk from a 45-degree angle. |
+| **4** | The Descent | A dramatic zoom-in toward the event horizon. |
+| **5** | Orbital Fly-by | A full 360-degree rotation around the singularity. |
+| **6** | Deep Space | A distant, static view of the lensing effect. |
+
+### 🧪 Experiment with the Physics
+The real power of this project is its flexibility. Open the `fragment_shader.glsl` file and try tweaking these values to see how the physics change:
+
+- **Change Gravity:** modify the gravity constant ($0.05$) to see how it warps the Einstein Rings.
+
+- **Alter the Disk:** adjust the `innerEdge` and `outerEdge` in the accretionDisk function to resize the gas rings.
+
+- **Time Warp:** change the speed of the disk by editing the localTime multiplier.
 

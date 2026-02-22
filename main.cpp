@@ -72,7 +72,7 @@ int main() {
     glfwGetFramebufferSize(window, &w, &h);
     glViewport(0, 0, w, h);
 
-    const std::vector<int> video_scenarios = {6};
+    const std::vector<int> video_scenarios = {5};
 
     // Uniform Locations (le cerchiamo una volta sola)
     int timeLoc = glGetUniformLocation(shaderProgram, "u_time");
