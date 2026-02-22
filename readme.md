@@ -98,47 +98,22 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 5. **Orbit:** a complete 360° hemispherical orbit Passing over the poles.
 ---
 ## 🎥 Qualitative results
-<p align="center">
-  <img src="readme_video/scenarios_gif/scenario1_low.gif" width="48%" />
-  <img src="readme_video/scenarios_gif/scenario2_low.gif" width="48%" />
-</p>
-<p align="center">
-  <em style="display: inline-block; width: 48%;">Scenario 1</em>
-  <em style="display: inline-block; width: 48%;">Scenario 2</em>
-</p>
-
-<p align="center">
-  <img src="readme_video/scenarios_gif/scenario3_low.gif" width="48%" />
-  <img src="readme_video/scenarios_gif/scenario4_low.gif" width="48%" />
-</p>
-<p align="center">
-  <em style="display: inline-block; width: 48%;">Scenario 3</em>
-  <em style="display: inline-block; width: 48%;">Scenario 4</em>
-</p>
-
-<p align="center">
-  <img src="readme_video/scenarios_gif/scenario5_low.gif" width="48%" />
-  <img src="readme_video/scenarios_gif/scenario6_low.gif" width="48%" />
-</p>
-<p align="center">
-  <em style="display: inline-block; width: 48%;">Scenario 5</em>
-  <em style="display: inline-block; width: 48%;">Scenario 6</em>
-</p>
-
-
 <div align="center">
-  <div style="display: inline-block; width: 45%; vertical-align: top;">
-    <img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%">
-    <p><b>Scenario 6: Deep Space</b><br>
+  <div style="display: inline-block; width: 48%; text-align: center; vertical-align: top;">
+    <img src="readme_video/scenarios_gif/scenario5_low.gif" width="100%"/>
+    <br>
+    <em>Scenario 5</em>
   </div>
 
-  <div style="display: inline-block; width: 2%;"></div>
-
-  <div style="display: inline-block; width: 45%; vertical-align: top;">
-    <img src="readme_video/scenarios_gif/scenario4_low.gif" width="100%">
-    <p><b>Scenario 4</b><br>
+  <div style="display: inline-block; width: 48%; text-align: center; vertical-align: top;">
+    <img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%"/>
+    <br>
+    <em>Scenario 6</em>
   </div>
 </div>
+
+
+
 
 
 ---
