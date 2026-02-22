@@ -1,15 +1,9 @@
 # Black Hole GLSL Simulation 🪐🕳
 This repository features a physically-inspired, real-time simulation of a Schwarzschild Black Hole and its accretion disk. Developed as a single-pass GLSL fragment shader.
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="readme_video/scenarios_gif/scenario6_low.gif" width="380">
-    </td>
-    <td align="center">
-      <img src="readme_video/scenarios_gif/scenario4_low.gif" width="380">
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="readme_video/scenarios_gif/scenario6_low.gif" width="48%" />
+  <img src="readme_video/scenarios_gif/scenario4_low.gif" width="48%" />
+</p>
 
 > 😁 **Just for Fun:** This is a project created purely for experimentation and visual enjoyment. I'm exploring the math behind black holes, but I'm not a physicist, so expect some "artistic liberties" alongside the event horizons!
 
@@ -104,6 +98,33 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 5. **Orbit:** a complete 360° hemispherical orbit Passing over the poles.
 ---
 ## 🎥 Qualitative results
+<p align="center">
+  <img src="readme_video/scenarios_gif/scenario1_low.gif" width="48%" />
+  <img src="readme_video/scenarios_gif/scenario2_low.gif" width="48%" />
+</p>
+<p align="center">
+  <em style="display: inline-block; width: 48%;">Scenario 1</em>
+  <em style="display: inline-block; width: 48%;">Scenario 2</em>
+</p>
+
+<p align="center">
+  <img src="readme_video/scenarios_gif/scenario3_low.gif" width="48%" />
+  <img src="readme_video/scenarios_gif/scenario4_low.gif" width="48%" />
+</p>
+<p align="center">
+  <em style="display: inline-block; width: 48%;">Scenario 3</em>
+  <em style="display: inline-block; width: 48%;">Scenario 4</em>
+</p>
+
+<p align="center">
+  <img src="readme_video/scenarios_gif/scenario5_low.gif" width="48%" />
+  <img src="readme_video/scenarios_gif/scenario6_low.gif" width="48%" />
+</p>
+<p align="center">
+  <em style="display: inline-block; width: 48%;">Scenario 5</em>
+  <em style="display: inline-block; width: 48%;">Scenario 6</em>
+</p>
+
 - **Scenario 1:**
     
     <img src="readme_video/scenarios_gif/scenario1_low.gif" width="400" alt="scenario6.gif">
