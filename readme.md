@@ -130,15 +130,13 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
   <div style="display: inline-block; width: 48%; vertical-align: top;">
     <img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%">
     <p><b>Scenario 6: Deep Space</b><br>
-    <i>Distant static view of the lensing effect</i></p>
   </div>
 
   <div style="display: inline-block; width: 1%;"></div>
 
   <div style="display: inline-block; width: 48%; vertical-align: top;">
-    <img src="readme_video/scenarios_gif/scenario4_low.gif" width="100%" style="border-radius: 10px;">
+    <img src="readme_video/scenarios_gif/scenario4_low.gif" width="100%">
     <p><b>Scenario 4</b><br>
-    <i>Dramatic zoom toward the event horizon</i></p>
   </div>
 </div>
 
