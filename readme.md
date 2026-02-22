@@ -100,8 +100,16 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 - **Scenario 5:**
 - **Scenario 6:**
 
-<video src="readme_video/scenarios_gif/scenario1_compresso.mp4" mute autoplay loop style="max-width: 100%;"></video>
-
+<div align="center">
+  <video src="https://github.com/Lori-in-the-clouds/Black_Hole_Simulation/raw/main/readme_video/scenarios_gif/scenario_1_compresso.mp4" 
+         muted 
+         autoplay 
+         loop 
+         playsinline 
+         style="max-width: 100%; border-radius: 10px;">
+  </video>
+  <p><i>Scenario 1: Standard Orbit</i></p>
+</div>
 ---
 ## 🚀 Try it Yourself
 Want to navigate the event horizon on your own machine? You can run the simulation and switch between different cinematic scenarios.
