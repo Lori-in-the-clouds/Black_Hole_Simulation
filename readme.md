@@ -99,15 +99,8 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 - **Scenario 4:**
 - **Scenario 5:**
 - **Scenario 6:**
-<div align="center">
-  <video src="readme_video/scenarios_gif/scenario1_compresso.mp4" 
-         muted 
-         autoplay 
-         loop 
-         width="100%"
-         style="max-width: 800px; border-radius: 10px;">
-  </video>
-</div>
+
+[![Watch the video](https://raw.githubusercontent.com/Lori-in-the-clouds/Black_Hole_Simulation/new-main/readme_video/scenarios_gif/scenario1_compresso.mp4)]
 
 ---
 ## 🚀 Try it Yourself
