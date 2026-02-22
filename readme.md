@@ -29,7 +29,8 @@ To achieve real-time performance, the simulation approximates General Relativity
    * <u>Time Dilation:</u> time is not absolute; it slows down in the presence of strong gravitational fields. In this simulation, this effect is used to slow the motion of the accretion disk gas as it approaches the Event Horizon:
      
      $$t_{local}=t_{obs}\cdot \sqrt{1.0-\frac{1.0}{d}}$$
-        Where:
+        
+      Where:
         - **$t_{local}$ (Proper Time):** the "local" clock experienced by the gas at a specific distance from the black hole. In the shader, this value scales the procedural flowNoise: a lower $t_{local}$ results in slower, "frozen" animations as the gas nears the horizon.
         - **$t_{obs}$ (Coordinate Time):** the time measured by a distant observer (at infinity). This corresponds to the `u_time` uniform passed from the CPU, representing the total elapsed time since the simulation started.
         - **$d$ (Radial Distance):** the Euclidean distance from the current point to the center of the singularity.
@@ -42,6 +43,7 @@ To achieve real-time performance, the simulation approximates General Relativity
 3. **Relativistic Beaming:** brightness is modulated based on the dot product between the ray direction and the gas velocity vector to simulate the "_Searchlight Effect_":
     
      $$I_{boost}= (1.0+rd\cdot v_{gas})^{3.5} $$
+    
     Where:
     - **$I_{boost}$ (Intensity Multiplier):** the final factor applied to the base color of the gas. It scales the brightness of the disk based on its relative motion.
     - **$rd$ (Ray Direction):** the normalized vector representing the direction of the light ray coming from the camera. 
