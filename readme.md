@@ -125,24 +125,22 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
   <em style="display: inline-block; width: 48%;">Scenario 6</em>
 </p>
 
-- **Scenario 1:**
-    
-    <img src="readme_video/scenarios_gif/scenario1_low.gif" width="400" alt="scenario6.gif">
-- **Scenario 2:**
-    
-    <img src="readme_video/scenarios_gif/scenario2_low.gif" width="400" alt="scenario6.gif">
-- **Scenario 3:**
-    
-    <img src="readme_video/scenarios_gif/scenario3_low.gif" width="400" alt="scenario6.gif">
-- **Scenario 4:**
-    
-    <img src="readme_video/scenarios_gif/scenario4_low.gif" width="400" alt="scenario6.gif">
-- **Scenario 5:**
 
-  <img src="readme_video/scenarios_gif/scenario5_low.gif" width="400" alt="scenario6.gif">
-- **Scenario 6:**
-   
-  <img src="readme_video/scenarios_gif/scenario6_low.gif" width="400" alt="scenario6.gif">
+<div align="center">
+  <div style="display: inline-block; width: 48%; vertical-align: top;">
+    <img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%">
+    <p><b>Scenario 6: Deep Space</b><br>
+    <i>Distant static view of the lensing effect</i></p>
+  </div>
+
+  <div style="display: inline-block; width: 1%;"></div>
+
+  <div style="display: inline-block; width: 48%; vertical-align: top;">
+    <img src="readme_video/scenarios_gif/scenario4_low.gif" width="100%" style="border-radius: 10px;">
+    <p><b>Scenario 4</b><br>
+    <i>Dramatic zoom toward the event horizon</i></p>
+  </div>
+</div>
 
 
 ---
