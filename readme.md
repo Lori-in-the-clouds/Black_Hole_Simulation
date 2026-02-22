@@ -1,9 +1,15 @@
 # Black Hole GLSL Simulation 🪐🕳
 This repository features a physically-inspired, real-time simulation of a Schwarzschild Black Hole and its accretion disk. Developed as a single-pass GLSL fragment shader.
-<div align="center">
-  <img src="readme_video/scenarios_gif/scenario6_low.gif" width="350">
-  <br> <img src="readme_video/scenarios_gif/scenario4_low.gif" width="350">
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="readme_video/scenarios_gif/scenario6_low.gif" width="380">
+    </td>
+    <td align="center">
+      <img src="readme_video/scenarios_gif/scenario4_low.gif" width="380">
+    </td>
+  </tr>
+</table>
 
 > 😁 **Just for Fun:** This is a project created purely for experimentation and visual enjoyment. I'm exploring the math behind black holes, but I'm not a physicist, so expect some "artistic liberties" alongside the event horizons!
 
