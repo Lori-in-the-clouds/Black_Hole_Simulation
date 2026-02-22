@@ -127,14 +127,14 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 
 
 <div align="center">
-  <div style="display: inline-block; width: 48%; vertical-align: top;">
+  <div style="display: inline-block; width: 45%; vertical-align: top;">
     <img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%">
     <p><b>Scenario 6: Deep Space</b><br>
   </div>
 
-  <div style="display: inline-block; width: 1%;"></div>
+  <div style="display: inline-block; width: 2%;"></div>
 
-  <div style="display: inline-block; width: 48%; vertical-align: top;">
+  <div style="display: inline-block; width: 45%; vertical-align: top;">
     <img src="readme_video/scenarios_gif/scenario4_low.gif" width="100%">
     <p><b>Scenario 4</b><br>
   </div>
