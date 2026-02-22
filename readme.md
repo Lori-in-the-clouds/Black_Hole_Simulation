@@ -101,7 +101,7 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 - **Scenario 6:**
 
 <div align="center">
-  <video src="https://github.com/Lori-in-the-clouds/Black_Hole_Simulation/raw/main/readme_video/scenarios_gif/scenario_1_compresso.mp4" 
+  <video src="https://github.com/Lori-in-the-clouds/Black_Hole_Simulation/blob/new-main/readme_video/scenarios_gif/scenario_1_compresso.mp4?raw=true" 
          muted 
          autoplay 
          loop 
