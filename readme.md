@@ -5,6 +5,7 @@ This repository features a physically-inspired, real-time simulation of a Schwar
   <img src="readme_video/scenarios_gif/scenario4_low.gif" width="48%" />
 </p>
 
+
 > 😁 **Just for Fun:** This is a project created purely for experimentation and visual enjoyment. I'm exploring the math behind black holes, but I'm not a physicist, so expect some "artistic liberties" alongside the event horizons!
 
 ## 🚀 Overview
