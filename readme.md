@@ -98,7 +98,32 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 5. **Orbit:** a complete 360° hemispherical orbit Passing over the poles.
 ---
 ## 🎥 Qualitative results
-<div align="center"><div style="display:inline-block;width:45%;vertical-align:top;"><img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%"><br><b>Scenario 6</b><br><i>Deep Space View</i></div><div style="display:inline-block;width:5%;"></div><div style="display:inline-block;width:45%;vertical-align:top;"><img src="readme_video/scenarios_gif/scenario4_low.gif" width="100%"><br><b>Scenario 4</b><br><i>The Descent</i></div></div>
+<p>
+  <img src="readme_video/scenarios_gif/scenario1_low.gif" width="48%" />
+  <img src="readme_video/scenarios_gif/scenario2_low.gif" width="48%" />
+</p>
+<p>
+  <em style="display: inline-block; width: 48%;">Scenario 1</em>
+  <em style="display: inline-block; width: 48%;">Scenario 2</em>
+</p>
+
+<p align="center">
+  <img src="readme_video/scenarios_gif/scenario3_low.gif" width="48%" />
+  <img src="readme_video/scenarios_gif/scenario4_low.gif" width="48%" />
+</p>
+<p align="center">
+  <em style="display: inline-block; width: 48%;">Scenario 3</em>
+  <em style="display: inline-block; width: 48%;">Scenario 4</em>
+</p>
+
+<p align="center">
+  <img src="readme_video/scenarios_gif/scenario5_low.gif" width="48%" />
+  <img src="readme_video/scenarios_gif/scenario6_low.gif" width="48%" />
+</p>
+<p align="center">
+  <em style="display: inline-block; width: 48%;">Scenario3</em>
+  <em style="display: inline-block; width: 48%;">Scenario 4</em>
+</p>
 
 
 
