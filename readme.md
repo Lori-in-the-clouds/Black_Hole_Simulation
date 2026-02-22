@@ -52,11 +52,12 @@ To achieve real-time performance, the simulation approximates General Relativity
         - **$t_{obs}$ (Coordinate Time):** the time measured by a distant observer (at infinity). This corresponds to the `u_time` uniform passed from the CPU, representing the total elapsed time since the simulation started.
         - **$d$ (Radial Distance):** the Euclidean distance from the current point to the center of the singularity.
         - **$R_s = 1.0$ (Schwarzschild Radius):** the simulation is normalized so that the Event Horizon lies exactly at $1.0$ unit from the center.
-     
-     >  **🔭 Physical Meaning:**
-     > 
-     > * At infinity ($d\rightarrow \infty$): $t_local$ is equal to $t_{obs}$, and the gas moves at its standard speed.
-     > * At the Event Horizon ($d\rightarrow 1.0$): $t_{local}$ becomes $0$. To a distant observer, the gas appears to freeze in time right before crossing the horizon.
+   
+        <br>
+    >  **🔭 Physical Meaning:**
+    > 
+    > * At infinity ($d\rightarrow \infty$): $t_local$ is equal to $t_{obs}$, and the gas moves at its standard speed.
+    > * At the Event Horizon ($d\rightarrow 1.0$): $t_{local}$ becomes $0$. To a distant observer, the gas appears to freeze in time right before crossing the horizon.
 
 3. **Relativistic Beaming:** brightness is modulated based on the dot product between the ray direction and the gas velocity vector to simulate the "_Searchlight Effect_":
     
