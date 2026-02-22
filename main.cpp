@@ -7,7 +7,7 @@
 const int SCR_WIDTH = 1920;
 const int SCR_HEIGHT = 1080;
 
-int main() {
+int main(int argc, char* argv[]) {
     // 1. Inizializzazione Base
     if (!glfwInit()) return -1;
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -72,7 +72,21 @@ int main() {
     glfwGetFramebufferSize(window, &w, &h);
     glViewport(0, 0, w, h);
 
-    const std::vector<int> video_scenarios = {5};
+    std::vector<int> video_scenarios = {};
+
+    if (argc > 1) {
+        for (int i = 1; i < argc; i++) {
+            try {
+                video_scenarios.push_back(std::stoi(argv[i]));
+            } catch (...) {
+                std::cout << "Argomento non valido ignorato: " << argv[i] << std::endl;
+            }
+        }
+    } else {
+        // Se non inserisci nulla, possiamo mettere uno scenario di default (es. lo scenario 5)
+        std::cout << "Nessuno scenario specificato. Uso lo scenario di default: 6" << std::endl;
+        video_scenarios.push_back(6);
+    }
 
     // Uniform Locations (le cerchiamo una volta sola)
     int timeLoc = glGetUniformLocation(shaderProgram, "u_time");

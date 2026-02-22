@@ -112,7 +112,7 @@ The following section presents the qualitative results for Scenarios 1 to 6, dem
   <img src="readme_video/scenarios_gif/scenario5_low.gif" width="48%" />
   <img src="readme_video/scenarios_gif/scenario6_low.gif" width="48%" />
 </p>
-The original renders are 5GB each (I know, crazy right?). To save us all some bandwidth, I’m only showing GIFs here. But if you want the 'full' experience without the 5GB headache, you can download a folder with 6 compressed MP4 versions here.
+The original renders are 5GB each (I know, crazy right?). To save us all some bandwidth, I’m only showing GIFs here. But if you want the 'full' experience without the 5GB headache, you can download a folder with 6 compressed MP4 versions here: 
 
 **[⬇️ Download the 6 compressed scenarios (ZIP) ](https://github.com/Lori-in-the-clouds/Black_Hole_Simulation/raw/new-main/readme_video/videos_compressed.zip)**
 
@@ -121,22 +121,28 @@ The original renders are 5GB each (I know, crazy right?). To save us all some ba
 Want to navigate the event horizon on your own machine? You can run the simulation and switch between different cinematic scenarios.
 ### 1. Prerequisites
 To compile and run the project, ensure you have:
-- A C++ compiler (GCC, Clang, or MSVC).
-
-- GLFW and GLEW/Glad for OpenGL context and window management.
-
+- A **C++** compiler (GCC, Clang, or MSVC).
+- **GLFW** installed.
+- **GLAD** and the KHR headers included in your project folder.
+- **FFmpeg** installed (required by the VideoRecorder to save the .mp4 files).
 - A GPU that supports OpenGL 3.3 core or higher.
-### 2. Quick Start
+### 2. Quick Start (on macOS)
 ```bash
 # Clone the repository
 git clone https://github.com/tuo-username/tuo-repo.git
-
-# Navigate to the directory
 cd black-hole-simulation
 
-# Compile and Run (example using g++)
-g++ main.cpp -lGL -lGLEW -lglfw -o black_hole
-./black_hole
+# Compile the project 
+# (Includes Homebrew paths and OpenGL framework)
+g++ -std=c++11 main.cpp video_recorder.cpp glad.c -o BlackHole \
+-I. -I/opt/homebrew/include -L/opt/homebrew/lib \
+-lglfw -framework OpenGL
+
+# Run a specific scenario (e.g., Scenario 1)
+./BlackHole 1
+
+# Run multiple scenarios in sequence (e.g., 1, 4, and 6)
+./BlackHole 1 4 6
 ```
 ### 3. Interactive Scenarios
 The shader includes 6 predefined camera scenarios. You can switch between them by changing the `u_scenario value in the code or via the integrated UI:
