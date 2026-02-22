@@ -114,9 +114,8 @@ The following section presents the qualitative results for Scenarios 1 to 6, dem
   <img src="readme_video/scenarios_gif/scenario5_low.gif" width="48%" />
   <img src="readme_video/scenarios_gif/scenario6_low.gif" width="48%" />
 </p>
-The original renders are 5GB each (I know, crazy right?). To save us all some bandwidth, I’m only showing GIFs here. But if you want the 'full' experience without the 5GB headache, you can download a folder with 6 compressed MP4 versions here: 
 
-**[⬇️ Download the 6 compressed scenarios (ZIP) ](https://github.com/Lori-in-the-clouds/Black_Hole_Simulation/raw/new-main/readme_video/videos_compressed.zip)**
+The original renders are 5GB each (I know, crazy right?). To save us all some bandwidth, I’m only showing GIFs here. But if you want the 'full' experience without the 5GB headache, you can download a folder with 6 compressed MP4 versions [here](https://github.com/Lori-in-the-clouds/Black_Hole_Simulation/raw/new-main/readme_video/videos_compressed.zip).
 
 ---
 ## 🚀 Try it Yourself
