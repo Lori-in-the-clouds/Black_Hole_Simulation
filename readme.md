@@ -1,5 +1,10 @@
 # Black Hole GLSL Simulation 🪐🕳
 This repository features a physically-inspired, real-time simulation of a Schwarzschild Black Hole and its accretion disk. Developed as a single-pass GLSL fragment shader.
+<div align="center">
+  <img src="readme_video/scenarios_gif/scenario6_low.gif" width="350">
+  <br> <img src="readme_video/scenarios_gif/scenario4_low.gif" width="350">
+</div>
+
 > 😁 **Just for Fun:** This is a project created purely for experimentation and visual enjoyment. I'm exploring the math behind black holes, but I'm not a physicist, so expect some "artistic liberties" alongside the event horizons!
 
 ## 🚀 Overview
@@ -94,17 +99,23 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 ---
 ## 🎥 Qualitative results
 - **Scenario 1:**
-    ![scenario1.gif](readme_video/scenarios_gif/scenario1.gif)
+    
+    <img src="readme_video/scenarios_gif/scenario1_low.gif" width="400" alt="scenario6.gif">
 - **Scenario 2:**
-    ![scenario2.gif](readme_video/scenarios_gif/scenario2.gif)
+    
+    <img src="readme_video/scenarios_gif/scenario2_low.gif" width="400" alt="scenario6.gif">
 - **Scenario 3:**
-    ![scenario3.gif](readme_video/scenarios_gif/scenario3.gif)
+    
+    <img src="readme_video/scenarios_gif/scenario3_low.gif" width="400" alt="scenario6.gif">
 - **Scenario 4:**
-    ![scenario4.gif](readme_video/scenarios_gif/scenario4.gif)
+    
+    <img src="readme_video/scenarios_gif/scenario4_low.gif" width="400" alt="scenario6.gif">
 - **Scenario 5:**
-    ![scenario5.gif](readme_video/scenarios_gif/scenario5.gif)
+
+  <img src="readme_video/scenarios_gif/scenario5_low.gif" width="400" alt="scenario6.gif">
 - **Scenario 6:**
-    ![scenario6.gif](readme_video/scenarios_gif/scenario6.gif)
+   
+  <img src="readme_video/scenarios_gif/scenario6_low.gif" width="400" alt="scenario6.gif">
 
 
 ---
