@@ -94,13 +94,18 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 ---
 ## 🎥 Qualitative results
 - **Scenario 1:**
+    ![scenario1.gif](readme_video/scenarios_gif/scenario1.gif)
 - **Scenario 2:**
+    ![scenario2.gif](readme_video/scenarios_gif/scenario2.gif)
 - **Scenario 3:**
+    ![scenario3.gif](readme_video/scenarios_gif/scenario3.gif)
 - **Scenario 4:**
+    ![scenario4.gif](readme_video/scenarios_gif/scenario4.gif)
 - **Scenario 5:**
+    ![scenario5.gif](readme_video/scenarios_gif/scenario5.gif)
 - **Scenario 6:**
+    ![scenario6.gif](readme_video/scenarios_gif/scenario6.gif)
 
-[![Watch the video](https://raw.githubusercontent.com/Lori-in-the-clouds/Black_Hole_Simulation/new-main/readme_video/scenarios_gif/scenario1_compresso.mp4)]
 
 ---
 ## 🚀 Try it Yourself
