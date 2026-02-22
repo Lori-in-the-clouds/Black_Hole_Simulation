@@ -1,6 +1,6 @@
 # Black Hole GLSL Simulation 🪐🕳
 This repository features a physically-inspired, real-time simulation of a Schwarzschild Black Hole and its accretion disk. Developed as a single-pass GLSL fragment shader.
-> 😁 **Just for Fun:** This is a project created purely for experimentation and visual enjoyment. I'm exploring the math behind black holes, but I'm not a physicist—so expect some "artistic liberties" alongside the event horizons!
+> 😁 **Just for Fun:** This is a project created purely for experimentation and visual enjoyment. I'm exploring the math behind black holes, but I'm not a physicist, so expect some "artistic liberties" alongside the event horizons!
 
 ## 🚀 Overview
 The simulation visualizes how extreme gravity warps space and time. Rather than using static textures, every visual element from the bending of starlight to the turbulent flow of the accretion disk is calculated dynamically on the GPU.
@@ -18,13 +18,16 @@ The simulation visualizes how extreme gravity warps space and time. Rather than 
 ## 🔬 Mathematical Implementation
 To achieve real-time performance, the simulation approximates General Relativity equations:
 1. **Gravitational Lensing (Light Bending):** the ray direction ($rd$) is updated at each step based on the distance ($d$) from the center:
+    
     $$rd_{new} = normalize(rd + normalize(-p)\cdot \frac{G}{d^2}) $$
+    
     **Note:** $G$ is the gravitational constant (set to $0.05$ in the source) and $p$ represents the ray's current position.
 
 2. **Accretion Disk Physics:** the disk is defined as a thin volumetric plane between $2.2$ and $6.0$ Schwarzschild radii ($R_s$).
    * <u>Velocity Field:</u> gas rotation follows an angular velocity proportional to $\frac{1}{d}$.
    
    * <u>Time Dilation:</u> time is not absolute; it slows down in the presence of strong gravitational fields. In this simulation, this effect is used to slow the motion of the accretion disk gas as it approaches the Event Horizon:
+     
      $$t_{local}=t_{obs}\cdot \sqrt{1.0-\frac{1.0}{d}}$$
         Where:
         - **$t_{local}$ (Proper Time):** the "local" clock experienced by the gas at a specific distance from the black hole. In the shader, this value scales the procedural flowNoise: a lower $t_{local}$ results in slower, "frozen" animations as the gas nears the horizon.
@@ -37,7 +40,8 @@ To achieve real-time performance, the simulation approximates General Relativity
      > * At the Event Horizon ($d\rightarrow 1.0$): $t_{local}$ becomes $0$. To a distant observer, the gas appears to freeze in time right before crossing the horizon.
 
 3. **Relativistic Beaming:** brightness is modulated based on the dot product between the ray direction and the gas velocity vector to simulate the "_Searchlight Effect_":
-    $$I_{boost}= (1.0+rd\cdot v_{gas})^{3.5} $$
+    
+     $$I_{boost}= (1.0+rd\cdot v_{gas})^{3.5} $$
     Where:
     - **$I_{boost}$ (Intensity Multiplier):** the final factor applied to the base color of the gas. It scales the brightness of the disk based on its relative motion.
     - **$rd$ (Ray Direction):** the normalized vector representing the direction of the light ray coming from the camera. 
@@ -45,9 +49,9 @@ To achieve real-time performance, the simulation approximates General Relativity
         ```c++
         normalize(cross(vec3(0.0, 1.0, 0.0), p))
         ```
-      
-      >  **🔭 Physical Meaning:**
-      >
+
+    >  **🔭 Physical Meaning:**
+    >
       > * **Approaching Gas:** the light is blueshifted and compressed, resulting in an exponential boost in brightness.
       >
       > * **Receding Gas:** the light is redshifted and dimmed, causing that side of the disk to appear dark.
