@@ -99,16 +99,12 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 ---
 ## 🎥 Qualitative results
 <div align="center">
-  <div style="display: inline-block; width: 48%; text-align: center; vertical-align: top;">
-    <img src="readme_video/scenarios_gif/scenario5_low.gif" width="100%"/>
-    <br>
-    <em>Scenario 5</em>
-  </div>
-
-  <div style="display: inline-block; width: 48%; text-align: center; vertical-align: top;">
-    <img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%"/>
-    <br>
-    <em>Scenario 6</em>
+  <div style="display: inline-block; width: 48%; vertical-align: top;">
+    <img src="readme_video/scenarios_gif/scenario5_low.gif" width="100%" />
+    <p><b>Scenario 5</b><br><i>Orbital Fly-by (360° rotation)</i></p>
+  </div><div style="display: inline-block; width: 4%; line-height: 1;"></div><div style="display: inline-block; width: 48%; vertical-align: top;">
+    <img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%" />
+    <p><b>Scenario 6</b><br><i>Deep Space (Lensing effect)</i></p>
   </div>
 </div>
 
