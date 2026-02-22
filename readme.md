@@ -98,18 +98,7 @@ The system includes 5 pre-configured camera paths controllable via the `u_scenar
 5. **Orbit:** a complete 360° hemispherical orbit Passing over the poles.
 ---
 ## 🎥 Qualitative results
-<div align="center">
-  <figure style="display: inline-block; width: 45%; vertical-align: top; margin: 0;">
-    <img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%" />
-    <figcaption><b>Scenario 6</b>: Deep Space View</figcaption>
-  </figure>
-
-  <figure style="display: inline-block; width: 45%; vertical-align: top; margin: 0;">
-    <img src="readme_video/scenarios_gif/scenario4_low.gif" width="100%" />
-    <figcaption><b>Scenario 4</b>: The Descent</figcaption>
-  </figure>
-</div>
-
+<div align="center"><div style="display:inline-block;width:45%;vertical-align:top;"><img src="readme_video/scenarios_gif/scenario6_low.gif" width="100%"><br><b>Scenario 6</b><br><i>Deep Space View</i></div><div style="display:inline-block;width:5%;"></div><div style="display:inline-block;width:45%;vertical-align:top;"><img src="readme_video/scenarios_gif/scenario4_low.gif" width="100%"><br><b>Scenario 4</b><br><i>The Descent</i></div></div>
 
 
 
