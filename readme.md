@@ -80,12 +80,20 @@ To achieve real-time performance, the simulation approximates General Relativity
       >
       > * **The "1.0" Offset:** this prevents the intensity from dropping to zero.
 ---
-## 🛠 Project Constraints & Limitations
-- **Non-Kerr Metric:** this simulation models a non-rotating (Schwarzschild) black hole; frame-dragging (Kerr metric) is not currently implemented.
 
-- **Adaptive Ray-marching:** we use a distance-based step size to optimize performance, utilizing Dithering to mitigate potential banding artifacts.
+## ⚠️ Assumptions & Limitations
 
-- **Volumetric Fog:** the "glow" is implemented as a screen-space accumulation rather than a full 3D volumetric fluid simulation.
+While this project aims to provide a visually compelling representation of general relativity (such as gravitational lensing and time dilation), it relies on specific mathematical approximations to ensure **smooth, real-time rendering on standard consumer-grade hardware and everyday laptops**.
+
+### 🌌 Physical Assumptions
+* **Schwarzschild Metric:** The model assumes a static, non-rotating black hole. Real-world supermassive black holes are typically *Kerr black holes* (rotating), which exhibit "frame-dragging" and warp the surrounding space asymmetrically.
+* **2D Accretion Disk:** The gas disk is mathematically approximated as an infinitely thin plane rather than a fully simulated 3D volumetric fluid, bypassing the extreme computational cost of true volumetric ray-tracing.
+
+### 🚧 Technical Limitations
+* **No Relativistic Doppler Beaming:** In a fully physically accurate scenario, the side of the accretion disk rotating toward the observer would appear brighter and blue-shifted. This simulation uses uniform base luminosity for aesthetic clarity.
+* **Floating-Point Precision:** The GLSL shader relies on standard 32-bit float (`highp`) calculations. During extreme close-ups—such as the final frames of **Scenario 4: The Descent** minor numerical artifacts may occur near the absolute limit of the event horizon ($R_s = 1.0$).
+* **Adaptive Ray-marching:** We use a distance-based step size to optimize performance, utilizing **Dithering** to mitigate potential banding artifacts.
+* **Volumetric Fog:** The "glow" effect is implemented as a screen-space accumulation rather than a full 3D volumetric fluid simulation.
 ---
 ## 🎮 Cinematic Scenarios
 The system includes 5 pre-configured camera paths controllable via the `u_scenario` uniform:
